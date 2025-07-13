@@ -1,0 +1,2432 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ca6ce210824b473fa269351ee287e75b</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="161bca5f" class="cell markdown" id="161bca5f">
+<p><img src="nba%20logo.png" alt="NBA Logo" /></p>
+<p>Downloaded from <a
+href="https://andscape.com/features/hall-of-fame-jerry-west-designer-alan-siegel-nba-logo/">Andscape</a></p>
+</div>
+<div id="42017d12" class="cell markdown" id="42017d12">
+<h2 id="header-with-contribution">Header with contribution</h2>
+<p>How NBA Player Performance and Roles Have Evolved Across Eras</p>
+<p>CMSC320 - Summer 2025 Final Project Tutorial</p>
+<p>Abubakr Hussien, Matt Hullana, Tanishq Ahuja</p>
+<p>Contributions:</p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 17%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Sections Contributed</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Abu</td>
+<td>B, C, F, G</td>
+<td>Preprocessed and cleaned data; conducted exploratory data analysis
+on NBA performance trends.</td>
+</tr>
+<tr class="even">
+<td>Matt</td>
+<td>A, C, D, E, F</td>
+<td>Some data prep for ML analysis; did ML analysis using 4 different
+techniques</td>
+</tr>
+<tr class="odd">
+<td>Tanishq</td>
+<td>A, C, F</td>
+<td>Helped come up with early questions; Did ANOVA test, did both plots
+for linear regression and k means clustering, wrote insights and
+conclusion.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="0f6b8989" class="cell markdown" id="0f6b8989">
+<h2 id="introduction">Introduction</h2>
+<p>Basketball has evolved dramatically over the decades, from pace and
+playstyle to player roles and physicality. In this project, we explore
+how NBA player performance and characteristics have shifted across
+generations, using a comprehensive dataset of all 5,313 players from
+1947 to the present.</p>
+<p>Our goal is to understand the relationship between era, physical
+attributes, and on-court performance, and to uncover trends that reflect
+how the game itself has changed. Specifically, we aim to answer:</p>
+<p>Has scoring performance (PTS) changed significantly across NBA
+eras?</p>
+<ul>
+<li><p>Are physical attributes like height correlated with player
+success metrics such as Free Throw %, Player Efficiency Rating (PER),
+and Win Shares (WS)?</p></li>
+<li><p>Has the distribution of player positions (e.g., Guard, Forward,
+Center) evolved over time?</p></li>
+<li><p>Can we use machine learning models to predict player performance
+using features like height, weight, and debut year?</p></li>
+</ul>
+<p>By combining exploratory data analysis, statistical hypothesis
+testing, and machine learning, this tutorial offers a multi-faceted view
+into the history and structure of NBA talent. Our insights can help
+fans, analysts, and aspiring data scientists better understand how the
+sport has transformed over nearly eight decades.</p>
+</div>
+<div id="1dd95031" class="cell markdown" id="1dd95031">
+<h2 id="imports">Imports</h2>
+</div>
+<div id="29c304b2" class="cell code" id="29c304b2">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy.stats <span class="im">as</span> stats</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestRegressor</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> KMeans</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeClassifier</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> r2_score, accuracy_score, classification_report</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> ttest_ind</span></code></pre></div>
+</div>
+<div id="a1c053a1" class="cell markdown" id="a1c053a1">
+<h2 id="data-curation">Data Curation</h2>
+<p>Our dataset was sourced from <a
+href="https://www.kaggle.com/datasets/flynn28/v2-nba-player-database">Kaggle:
+NBA Player Stats Dataset</a>, which includes career data for 5,313 NBA
+players from 1947 to the present. Each row represents a single player,
+with features including physical attributes (e.g., height, weight),
+career span (debut/final year), position(s), and advanced metrics like
+Points per Game (PTS), Assists (AST), Rebounds (TRB), Player Efficiency
+Rating (PER), and Win Shares (WS).</p>
+</div>
+<div id="0a875142" class="cell markdown" id="0a875142">
+<p>, which includes career data for 5,313 NBA players from 1947 to the
+present. Each row represents a single player, with features including
+physical attributes (e.g., height, weight), career span (debut/final
+year), position(s), and advanced metrics like Points per Game (PTS),
+Assists (AST), Rebounds (TRB), Player Efficiency Rating (PER), and Win
+Shares (WS).</p>
+</div>
+<div id="b68b620e" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:424}"
+id="b68b620e" data-outputId="1e0b3955-be5a-473c-9f4d-660ee325ef33">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&quot;NBA_PLAYERS.csv&quot;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="17">
+
+  <div id="df-c011a82f-57ed-4911-86e5-0ebb0fadfa26" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Debut</th>
+      <th>Final</th>
+      <th>Position</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>Birthday</th>
+      <th>School</th>
+      <th>HOF</th>
+      <th>Active</th>
+      <th>G</th>
+      <th>PTS</th>
+      <th>TRB</th>
+      <th>AST</th>
+      <th>FG%</th>
+      <th>FG3%</th>
+      <th>FT%</th>
+      <th>eFG%</th>
+      <th>PER</th>
+      <th>WS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Alaa Abdelnaby</td>
+      <td>1991</td>
+      <td>1995</td>
+      <td>['Forward', 'Center']</td>
+      <td>82</td>
+      <td>240.0</td>
+      <td>June 24, 1968</td>
+      <td>['Duke']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>256</td>
+      <td>5.7</td>
+      <td>3.3</td>
+      <td>0.3</td>
+      <td>50.2</td>
+      <td>0.0</td>
+      <td>70.1</td>
+      <td>50.2</td>
+      <td>13.0</td>
+      <td>4.8</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Zaid Abdul-Aziz</td>
+      <td>1969</td>
+      <td>1978</td>
+      <td>['Center', 'Forward']</td>
+      <td>81</td>
+      <td>235.0</td>
+      <td>April 7, 1946</td>
+      <td>['Iowa State']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>505</td>
+      <td>9.0</td>
+      <td>8.0</td>
+      <td>1.2</td>
+      <td>42.8</td>
+      <td>NaN</td>
+      <td>72.8</td>
+      <td>NaN</td>
+      <td>15.1</td>
+      <td>17.5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Kareem Abdul-Jabbar</td>
+      <td>1970</td>
+      <td>1989</td>
+      <td>['Center']</td>
+      <td>86</td>
+      <td>225.0</td>
+      <td>April 16, 1947</td>
+      <td>['UCLA']</td>
+      <td>True</td>
+      <td>False</td>
+      <td>1560</td>
+      <td>24.6</td>
+      <td>11.2</td>
+      <td>3.6</td>
+      <td>55.9</td>
+      <td>5.6</td>
+      <td>72.1</td>
+      <td>55.9</td>
+      <td>24.6</td>
+      <td>273.4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Mahmoud Abdul-Rauf</td>
+      <td>1991</td>
+      <td>2001</td>
+      <td>['Guard']</td>
+      <td>73</td>
+      <td>162.0</td>
+      <td>March 9, 1969</td>
+      <td>['LSU']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>586</td>
+      <td>14.6</td>
+      <td>1.9</td>
+      <td>3.5</td>
+      <td>44.2</td>
+      <td>35.4</td>
+      <td>90.5</td>
+      <td>47.2</td>
+      <td>15.4</td>
+      <td>25.2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Tariq Abdul-Wahad</td>
+      <td>1998</td>
+      <td>2003</td>
+      <td>['Forward']</td>
+      <td>78</td>
+      <td>223.0</td>
+      <td>November 3, 1974</td>
+      <td>['Michigan', ' San Jose State']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>236</td>
+      <td>7.8</td>
+      <td>3.3</td>
+      <td>1.1</td>
+      <td>41.7</td>
+      <td>23.7</td>
+      <td>70.3</td>
+      <td>42.2</td>
+      <td>11.4</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>5308</th>
+      <td>Ante Žižić</td>
+      <td>2018</td>
+      <td>2020</td>
+      <td>['Forward', 'Center']</td>
+      <td>82</td>
+      <td>266.0</td>
+      <td>January 4, 1997</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>113</td>
+      <td>6.0</td>
+      <td>3.9</td>
+      <td>0.6</td>
+      <td>58.1</td>
+      <td>NaN</td>
+      <td>71.1</td>
+      <td>58.1</td>
+      <td>17.4</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <th>5309</th>
+      <td>Jim Zoet</td>
+      <td>1983</td>
+      <td>1983</td>
+      <td>['Center']</td>
+      <td>85</td>
+      <td>240.0</td>
+      <td>December 20, 1953</td>
+      <td>['Kent State University']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>7</td>
+      <td>0.3</td>
+      <td>1.1</td>
+      <td>0.1</td>
+      <td>20.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>20.0</td>
+      <td>-0.8</td>
+      <td>-0.1</td>
+    </tr>
+    <tr>
+      <th>5310</th>
+      <td>Bill Zopf</td>
+      <td>1971</td>
+      <td>1971</td>
+      <td>['Guard']</td>
+      <td>73</td>
+      <td>170.0</td>
+      <td>June 7, 1948</td>
+      <td>['Duquesne']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>53</td>
+      <td>2.2</td>
+      <td>0.9</td>
+      <td>1.4</td>
+      <td>36.3</td>
+      <td>NaN</td>
+      <td>55.6</td>
+      <td>NaN</td>
+      <td>9.6</td>
+      <td>-0.1</td>
+    </tr>
+    <tr>
+      <th>5311</th>
+      <td>Ivica Zubac</td>
+      <td>2017</td>
+      <td>2025</td>
+      <td>['Center']</td>
+      <td>84</td>
+      <td>240.0</td>
+      <td>March 18, 1997</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+      <td>584</td>
+      <td>10.2</td>
+      <td>8.1</td>
+      <td>1.4</td>
+      <td>61.6</td>
+      <td>8.3</td>
+      <td>72.6</td>
+      <td>61.6</td>
+      <td>19.4</td>
+      <td>51.3</td>
+    </tr>
+    <tr>
+      <th>5312</th>
+      <td>Matt Zunic</td>
+      <td>1949</td>
+      <td>1949</td>
+      <td>['Guard', 'Forward']</td>
+      <td>75</td>
+      <td>195.0</td>
+      <td>December 19, 1919</td>
+      <td>['George Washington']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>56</td>
+      <td>4.9</td>
+      <td>NaN</td>
+      <td>0.9</td>
+      <td>30.3</td>
+      <td>NaN</td>
+      <td>70.6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5313 rows × 20 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c011a82f-57ed-4911-86e5-0ebb0fadfa26')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-c011a82f-57ed-4911-86e5-0ebb0fadfa26 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-c011a82f-57ed-4911-86e5-0ebb0fadfa26');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-834c3341-45bc-4fc6-8e00-802483a6fab7">
+      <button class="colab-df-quickchart" onclick="quickchart('df-834c3341-45bc-4fc6-8e00-802483a6fab7')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-834c3341-45bc-4fc6-8e00-802483a6fab7 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_b1973928-1226-4e92-90e8-546cc576761b">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('df')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_b1973928-1226-4e92-90e8-546cc576761b button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('df');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div id="4adf5a72" class="cell markdown" id="4adf5a72">
+<p>We then performed the following data cleaning steps:</p>
+<p>Converted Birthday to datetime using pd.to_datetime()</p>
+<p>Parsed the Position field from a stringified list (e.g. "['Guard']")
+to a clean string (e.g. "Guard")</p>
+<p>Created a new column called Career_Length as the difference between
+the final and debut years</p>
+<p>Created an Era column by binning players by debut decade (e.g. 1990s,
+2000s)</p>
+<p>Dropped rows with missing values in critical fields (e.g., PTS,
+Height) for specific analyses</p>
+</div>
+<div id="e9b49bcf" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:597}"
+id="e9b49bcf" data-outputId="f1c0eab1-3e75-4e90-da18-79c95dfbf7fe">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Birthday&#39;</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">&#39;Birthday&#39;</span>], errors<span class="op">=</span><span class="st">&#39;coerce&#39;</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Position&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Position&#39;</span>].<span class="bu">str</span>.replace(<span class="vs">r&quot;\[|\]|&#39;&quot;</span>, <span class="st">&quot;&quot;</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Career_Length&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Final&#39;</span>] <span class="op">-</span> df[<span class="st">&#39;Debut&#39;</span>]</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Era&#39;</span>] <span class="op">=</span> (df[<span class="st">&#39;Debut&#39;</span>] <span class="op">//</span> <span class="dv">10</span> <span class="op">*</span> <span class="dv">10</span>).astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">&#39;s&#39;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="18">
+
+  <div id="df-ea67f41e-9849-4160-b456-458bc753ef4e" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Debut</th>
+      <th>Final</th>
+      <th>Position</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>Birthday</th>
+      <th>School</th>
+      <th>HOF</th>
+      <th>Active</th>
+      <th>...</th>
+      <th>TRB</th>
+      <th>AST</th>
+      <th>FG%</th>
+      <th>FG3%</th>
+      <th>FT%</th>
+      <th>eFG%</th>
+      <th>PER</th>
+      <th>WS</th>
+      <th>Career_Length</th>
+      <th>Era</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Alaa Abdelnaby</td>
+      <td>1991</td>
+      <td>1995</td>
+      <td>Forward, Center</td>
+      <td>82</td>
+      <td>240.0</td>
+      <td>1968-06-24</td>
+      <td>['Duke']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>3.3</td>
+      <td>0.3</td>
+      <td>50.2</td>
+      <td>0.0</td>
+      <td>70.1</td>
+      <td>50.2</td>
+      <td>13.0</td>
+      <td>4.8</td>
+      <td>4</td>
+      <td>1990s</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Zaid Abdul-Aziz</td>
+      <td>1969</td>
+      <td>1978</td>
+      <td>Center, Forward</td>
+      <td>81</td>
+      <td>235.0</td>
+      <td>1946-04-07</td>
+      <td>['Iowa State']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>8.0</td>
+      <td>1.2</td>
+      <td>42.8</td>
+      <td>NaN</td>
+      <td>72.8</td>
+      <td>NaN</td>
+      <td>15.1</td>
+      <td>17.5</td>
+      <td>9</td>
+      <td>1960s</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Kareem Abdul-Jabbar</td>
+      <td>1970</td>
+      <td>1989</td>
+      <td>Center</td>
+      <td>86</td>
+      <td>225.0</td>
+      <td>1947-04-16</td>
+      <td>['UCLA']</td>
+      <td>True</td>
+      <td>False</td>
+      <td>...</td>
+      <td>11.2</td>
+      <td>3.6</td>
+      <td>55.9</td>
+      <td>5.6</td>
+      <td>72.1</td>
+      <td>55.9</td>
+      <td>24.6</td>
+      <td>273.4</td>
+      <td>19</td>
+      <td>1970s</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Mahmoud Abdul-Rauf</td>
+      <td>1991</td>
+      <td>2001</td>
+      <td>Guard</td>
+      <td>73</td>
+      <td>162.0</td>
+      <td>1969-03-09</td>
+      <td>['LSU']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>1.9</td>
+      <td>3.5</td>
+      <td>44.2</td>
+      <td>35.4</td>
+      <td>90.5</td>
+      <td>47.2</td>
+      <td>15.4</td>
+      <td>25.2</td>
+      <td>10</td>
+      <td>1990s</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Tariq Abdul-Wahad</td>
+      <td>1998</td>
+      <td>2003</td>
+      <td>Forward</td>
+      <td>78</td>
+      <td>223.0</td>
+      <td>1974-11-03</td>
+      <td>['Michigan', ' San Jose State']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>3.3</td>
+      <td>1.1</td>
+      <td>41.7</td>
+      <td>23.7</td>
+      <td>70.3</td>
+      <td>42.2</td>
+      <td>11.4</td>
+      <td>3.5</td>
+      <td>5</td>
+      <td>1990s</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>5308</th>
+      <td>Ante Žižić</td>
+      <td>2018</td>
+      <td>2020</td>
+      <td>Forward, Center</td>
+      <td>82</td>
+      <td>266.0</td>
+      <td>1997-01-04</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>3.9</td>
+      <td>0.6</td>
+      <td>58.1</td>
+      <td>NaN</td>
+      <td>71.1</td>
+      <td>58.1</td>
+      <td>17.4</td>
+      <td>3.5</td>
+      <td>2</td>
+      <td>2010s</td>
+    </tr>
+    <tr>
+      <th>5309</th>
+      <td>Jim Zoet</td>
+      <td>1983</td>
+      <td>1983</td>
+      <td>Center</td>
+      <td>85</td>
+      <td>240.0</td>
+      <td>1953-12-20</td>
+      <td>['Kent State University']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>1.1</td>
+      <td>0.1</td>
+      <td>20.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>20.0</td>
+      <td>-0.8</td>
+      <td>-0.1</td>
+      <td>0</td>
+      <td>1980s</td>
+    </tr>
+    <tr>
+      <th>5310</th>
+      <td>Bill Zopf</td>
+      <td>1971</td>
+      <td>1971</td>
+      <td>Guard</td>
+      <td>73</td>
+      <td>170.0</td>
+      <td>1948-06-07</td>
+      <td>['Duquesne']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>0.9</td>
+      <td>1.4</td>
+      <td>36.3</td>
+      <td>NaN</td>
+      <td>55.6</td>
+      <td>NaN</td>
+      <td>9.6</td>
+      <td>-0.1</td>
+      <td>0</td>
+      <td>1970s</td>
+    </tr>
+    <tr>
+      <th>5311</th>
+      <td>Ivica Zubac</td>
+      <td>2017</td>
+      <td>2025</td>
+      <td>Center</td>
+      <td>84</td>
+      <td>240.0</td>
+      <td>1997-03-18</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+      <td>...</td>
+      <td>8.1</td>
+      <td>1.4</td>
+      <td>61.6</td>
+      <td>8.3</td>
+      <td>72.6</td>
+      <td>61.6</td>
+      <td>19.4</td>
+      <td>51.3</td>
+      <td>8</td>
+      <td>2010s</td>
+    </tr>
+    <tr>
+      <th>5312</th>
+      <td>Matt Zunic</td>
+      <td>1949</td>
+      <td>1949</td>
+      <td>Guard, Forward</td>
+      <td>75</td>
+      <td>195.0</td>
+      <td>1919-12-19</td>
+      <td>['George Washington']</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>0.9</td>
+      <td>30.3</td>
+      <td>NaN</td>
+      <td>70.6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.0</td>
+      <td>0</td>
+      <td>1940s</td>
+    </tr>
+  </tbody>
+</table>
+<p>5313 rows × 22 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-ea67f41e-9849-4160-b456-458bc753ef4e')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-ea67f41e-9849-4160-b456-458bc753ef4e button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-ea67f41e-9849-4160-b456-458bc753ef4e');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-3881c7c2-1557-485d-9a19-3821bb7d0f77">
+      <button class="colab-df-quickchart" onclick="quickchart('df-3881c7c2-1557-485d-9a19-3821bb7d0f77')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-3881c7c2-1557-485d-9a19-3821bb7d0f77 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_caccf250-19f1-4c20-876b-4ead9cf14f0b">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('df')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_caccf250-19f1-4c20-876b-4ead9cf14f0b button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('df');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div id="c4ffddef" class="cell markdown" id="c4ffddef">
+<h2 id="exploratory-data-analysis-eda">Exploratory Data Analysis
+(EDA)</h2>
+<p>To understand how NBA player performance and characteristics have
+changed over time, we conducted several exploratory analyses. These
+include summary statistics, correlation analysis, and hypothesis testing
+across eras.</p>
+</div>
+<div id="ac5f8fcc" class="cell markdown" id="ac5f8fcc">
+<h3 id="scoring-assists-and-rebounds-by-era">Scoring, Assists, and
+Rebounds by Era</h3>
+<p>We began by grouping players by their debut era (e.g., 1960s,
+1970s...) and computing the average points, assists, and rebounds per
+game.</p>
+</div>
+<div id="dad36af2" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:607}"
+id="dad36af2" data-outputId="3c0d9411-3a24-49f9-ca76-103e8b6fa280">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>era_stats <span class="op">=</span> df.groupby(<span class="st">&#39;Era&#39;</span>)[[<span class="st">&#39;PTS&#39;</span>, <span class="st">&#39;AST&#39;</span>, <span class="st">&#39;TRB&#39;</span>]].mean().sort_index()</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>era_stats.plot(kind<span class="op">=</span><span class="st">&#39;bar&#39;</span>, figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Average Points, Assists, and Rebounds per Game by Era&#39;</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Average per Game&#39;</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Era&#39;</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">&#39;y&#39;</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">&#39;Statistic&#39;</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_8e68b58e0d7647639b80e66bd34588b6/34586946c87a388b09856e4a010c31b456172124.png" /></p>
+</div>
+</div>
+<div id="22ab9834" class="cell markdown" id="22ab9834">
+<p>Observation: Scoring peaked for players debuting in the 1960s, with
+earlier decades also showing higher rebound counts — possibly due to
+lower shooting efficiency and more missed shots. Assists trended
+slightly upward in recent eras.</p>
+</div>
+<div id="373f1784" class="cell markdown" id="373f1784">
+<h3 id="hypothesis-test-1960s-vs-2010s-scoring">Hypothesis Test: 1960s
+vs 2010s Scoring</h3>
+<p>We tested whether scoring in the 1960s was significantly higher than
+in the 2010s using a Welch’s two-sample t-test:</p>
+</div>
+<div id="6cf04eb7" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:52}"
+id="6cf04eb7" data-outputId="13d112bd-4075-412a-f459-d4f846afe3df">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>pts_60s <span class="op">=</span> df[df[<span class="st">&#39;Era&#39;</span>] <span class="op">==</span> <span class="st">&#39;1960s&#39;</span>][<span class="st">&#39;PTS&#39;</span>].dropna()</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>pts_10s <span class="op">=</span> df[df[<span class="st">&#39;Era&#39;</span>] <span class="op">==</span> <span class="st">&#39;2010s&#39;</span>][<span class="st">&#39;PTS&#39;</span>].dropna()</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>t_stat, p_value <span class="op">=</span> ttest_ind(pts_60s, pts_10s, equal_var<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>display(t_stat)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>display(p_value)</span></code></pre></div>
+<div class="output display_data">
+<pre><code>np.float64(5.128798924225734)</code></pre>
+</div>
+<div class="output display_data">
+<pre><code>np.float64(3.527833660859907e-07)</code></pre>
+</div>
+</div>
+<div id="ce5ab581" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:487}"
+id="ce5ab581" data-outputId="fc990815-c7f9-4406-ada4-1392a383fed4">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>filtered_df <span class="op">=</span> df[df[<span class="st">&#39;Era&#39;</span>].isin([<span class="st">&#39;1960s&#39;</span>, <span class="st">&#39;2010s&#39;</span>])]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>mean_pts <span class="op">=</span> filtered_df.groupby(<span class="st">&#39;Era&#39;</span>)[<span class="st">&#39;PTS&#39;</span>].mean()</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>mean_pts.plot(kind<span class="op">=</span><span class="st">&#39;bar&#39;</span>, color<span class="op">=</span>[<span class="st">&#39;skyblue&#39;</span>, <span class="st">&#39;salmon&#39;</span>])</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Average Points Per Game: 1960s vs 2010s&quot;</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Average PTS&quot;</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Era&quot;</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">&#39;y&#39;</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_8e68b58e0d7647639b80e66bd34588b6/af77ba7149a307804e0ba2c2351b286b636621b9.png" /></p>
+</div>
+</div>
+<div id="33087345" class="cell markdown" id="&quot;33087345&quot;">
+<p>Result: The t-test revealed a statistically significant difference (p
+≈ 3.5e-07), confirming that 1960s players scored more per game than
+those in the 2010s.</p>
+</div>
+<div id="eebbfd03" class="cell markdown" id="eebbfd03">
+<h3 id="correlation-height-vs-ft-per-and-win-shares">Correlation: Height
+vs FT%, PER, and Win Shares</h3>
+<p>We assessed whether a player's height correlated with performance
+metrics:</p>
+</div>
+<div id="60dc5b2e" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="60dc5b2e" data-outputId="3b18c2ac-eb8c-445c-d78e-1ac83da82ddd">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>subset <span class="op">=</span> df[[<span class="st">&#39;Height&#39;</span>, <span class="st">&#39;FT%&#39;</span>, <span class="st">&#39;PER&#39;</span>, <span class="st">&#39;WS&#39;</span>]].dropna()</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>correlation <span class="op">=</span> subset.corr(method<span class="op">=</span><span class="st">&#39;pearson&#39;</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(correlation)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>          Height       FT%       PER        WS
+Height  1.000000 -0.244061  0.102993  0.085744
+FT%    -0.244061  1.000000  0.293479  0.203382
+PER     0.102993  0.293479  1.000000  0.526456
+WS      0.085744  0.203382  0.526456  1.000000
+</code></pre>
+</div>
+</div>
+<div id="9f428c77" class="cell markdown" id="9f428c77">
+<p>Then visualized the relationship:</p>
+</div>
+<div id="c9be9428" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:927}"
+id="c9be9428" data-outputId="f64a67b4-0644-4d40-da21-463abb8fab80">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>subset.plot.scatter(x<span class="op">=</span><span class="st">&#39;Height&#39;</span>, y<span class="op">=</span><span class="st">&#39;FT%&#39;</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Height vs Free Throw %&quot;</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>subset.plot.scatter(x<span class="op">=</span><span class="st">&#39;Height&#39;</span>, y<span class="op">=</span><span class="st">&#39;WS&#39;</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Height vs Win Shares&quot;</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_8e68b58e0d7647639b80e66bd34588b6/ecd3c4ce52ea732a7e506f30d934e9942cdf389b.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_8e68b58e0d7647639b80e66bd34588b6/9dfbd46e97ac6c44cde7a4c7d48e53490960cd21.png" /></p>
+</div>
+</div>
+<div id="fca2ddf6" class="cell markdown" id="fca2ddf6">
+<p>Correlation values were weak (≈ ±0.08), showing almost no linear
+relationship between height and metrics like FT%, PER, or WS. This
+suggests that skillset, not height alone, is a stronger driver of
+individual performance.</p>
+</div>
+<div id="p7ud7mF6EK0Z" class="cell markdown" id="p7ud7mF6EK0Z">
+<h3 id="analyzing-free-throw-percentage">Analyzing Free Throw
+Percentage</h3>
+<p>We looked into the three point percentage (FG3%) overtime in the form
+of eras such as the 80s, 90s, etc.</p>
+</div>
+<div id="0WJaUhJ2E8Hj" class="cell markdown" id="0WJaUhJ2E8Hj">
+<p>First we bin the Debut data into eras</p>
+</div>
+<div id="fncjv4qXEeJF" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:424}"
+id="fncjv4qXEeJF" data-outputId="f6400e7f-644a-4b42-f182-9ee53370b59b">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df_era <span class="op">=</span> df[[<span class="st">&#39;Debut&#39;</span>, <span class="st">&#39;FG3%&#39;</span>]].dropna()</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df_era <span class="op">=</span> df_era[df_era[<span class="st">&#39;FG3%&#39;</span>] <span class="op">&gt;</span> <span class="dv">0</span>]</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>bins<span class="op">=</span>[<span class="dv">1946</span>, <span class="dv">1959</span>, <span class="dv">1969</span>, <span class="dv">1979</span>, <span class="dv">1989</span>, <span class="dv">1999</span>, <span class="dv">2009</span>, <span class="dv">2019</span>, <span class="dv">2025</span>]</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> [<span class="st">&#39;1950s&#39;</span>, <span class="st">&#39;1960s&#39;</span>, <span class="st">&#39;1970s&#39;</span>, <span class="st">&#39;1980s&#39;</span>, <span class="st">&#39;1990s&#39;</span>, <span class="st">&#39;2000s&#39;</span>, <span class="st">&#39;2010s&#39;</span>, <span class="st">&#39;2020s&#39;</span>]</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>df_era[<span class="st">&#39;Era&#39;</span>] <span class="op">=</span> pd.cut(df_era[<span class="st">&#39;Debut&#39;</span>], bins<span class="op">=</span>bins, labels<span class="op">=</span>labels)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>df_era</span></code></pre></div>
+<div class="output execute_result" data-execution_count="24">
+
+  <div id="df-3cfceb4f-a7b4-47f5-891f-38231a18e590" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Debut</th>
+      <th>FG3%</th>
+      <th>Era</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>1970</td>
+      <td>5.6</td>
+      <td>1970s</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1991</td>
+      <td>35.4</td>
+      <td>1990s</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1998</td>
+      <td>23.7</td>
+      <td>1990s</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1997</td>
+      <td>29.7</td>
+      <td>1990s</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2017</td>
+      <td>36.8</td>
+      <td>2010s</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>5300</th>
+      <td>2013</td>
+      <td>28.6</td>
+      <td>2010s</td>
+    </tr>
+    <tr>
+      <th>5303</th>
+      <td>2001</td>
+      <td>38.5</td>
+      <td>2000s</td>
+    </tr>
+    <tr>
+      <th>5304</th>
+      <td>1996</td>
+      <td>25.0</td>
+      <td>1990s</td>
+    </tr>
+    <tr>
+      <th>5307</th>
+      <td>2017</td>
+      <td>33.5</td>
+      <td>2010s</td>
+    </tr>
+    <tr>
+      <th>5311</th>
+      <td>2017</td>
+      <td>8.3</td>
+      <td>2010s</td>
+    </tr>
+  </tbody>
+</table>
+<p>3030 rows × 3 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-3cfceb4f-a7b4-47f5-891f-38231a18e590')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-3cfceb4f-a7b4-47f5-891f-38231a18e590 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-3cfceb4f-a7b4-47f5-891f-38231a18e590');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-cf5183bd-c85c-41e1-acb5-9ff01431f8d7">
+      <button class="colab-df-quickchart" onclick="quickchart('df-cf5183bd-c85c-41e1-acb5-9ff01431f8d7')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-cf5183bd-c85c-41e1-acb5-9ff01431f8d7 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_61b2fa79-fc92-4861-9a38-cf4d602eb568">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('df_era')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_61b2fa79-fc92-4861-9a38-cf4d602eb568 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('df_era');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div id="4rAsqFzBFA29" class="cell markdown" id="4rAsqFzBFA29">
+<p>Then we do a one way ANOVA to see if there is signifance in the
+difference between FG3% over the eras</p>
+</div>
+<div id="5jDZuIVlEtpB" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="5jDZuIVlEtpB" data-outputId="49e4d36c-1de8-40d9-ad02-5397d4246b85">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> f_oneway</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>groups <span class="op">=</span> []</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> era, group <span class="kw">in</span> df_era.groupby(<span class="st">&#39;Era&#39;</span>, observed<span class="op">=</span><span class="va">True</span>):</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="bu">len</span>(group) <span class="op">&gt;</span> <span class="dv">1</span>:</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    groups.append(group[<span class="st">&#39;FG3%&#39;</span>].values)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>f_stat, p_value <span class="op">=</span> f_oneway(<span class="op">*</span>groups)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(f_stat, p_value)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>20.621471773091756 8.507420036953811e-24
+</code></pre>
+</div>
+</div>
+<div id="tqJZorLcEwso" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:462}"
+id="tqJZorLcEwso" data-outputId="6e45b7f3-d292-4341-95c0-4b6b66bd03bd">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df_era.boxplot(column<span class="op">=</span><span class="st">&#39;FG3%&#39;</span>, by<span class="op">=</span><span class="st">&#39;Era&#39;</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Boxplot of FG3% by Debut Era&quot;</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>plt.suptitle(<span class="st">&quot;&quot;</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Debut Era&quot;</span>)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;FG3%&quot;</span>)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">False</span>)</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_8e68b58e0d7647639b80e66bd34588b6/811f1765ae2a9f4226950556e8ffef7f5380bc95.png" /></p>
+</div>
+</div>
+<div id="xfWCeuSiEywD" class="cell markdown" id="xfWCeuSiEywD">
+<p>The f statistic of 20.62 is very large showing that there is at least
+a variation in FG3% between eras, more than within the ears. And the
+p-value being so small shows there is statistical significance. This
+means there is strong evidence of the fact that 3 point percentage has
+differed between eras.</p>
+<p>This is shown as the box plots seem to get smaller and smaller as
+time goes on, and also go up. This shows us the fact that the skill
+floor has risen as time has gone on.</p>
+</div>
+<div id="b36f7c2d" class="cell markdown" id="b36f7c2d">
+<h2 id="primary-machine-learning-analysis">Primary Machine Learning
+Analysis</h2>
+</div>
+<div id="78f5f59e-ba90-4666-ba15-78d724ed1724" class="cell markdown"
+id="78f5f59e-ba90-4666-ba15-78d724ed1724">
+<p>First, lets prep the data that we will be using for our ML
+models.</p>
+</div>
+<div id="e9c66f2c-2e6a-42a6-a589-7528418b0807" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="e9c66f2c-2e6a-42a6-a589-7528418b0807"
+data-outputId="cf57453f-6470-4a8e-85ce-118a8e084d10">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;FG3%&#39;</span>].fillna(<span class="dv">0</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">&#39;Weight&#39;</span> <span class="kw">in</span> df.columns <span class="kw">and</span> df[<span class="st">&#39;Weight&#39;</span>].isnull().<span class="bu">any</span>():</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">&#39;Weight&#39;</span>].fillna(df[<span class="st">&#39;Weight&#39;</span>].median(), inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>bucket <span class="op">=</span> [<span class="dv">1940</span>, <span class="dv">1950</span>, <span class="dv">1960</span>, <span class="dv">1970</span>, <span class="dv">1980</span>, <span class="dv">1990</span>, <span class="dv">2000</span>, <span class="dv">2010</span>, <span class="dv">2020</span>, <span class="dv">2030</span>]</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> [<span class="st">&#39;1940s&#39;</span>, <span class="st">&#39;1950s&#39;</span>, <span class="st">&#39;1960s&#39;</span>, <span class="st">&#39;1970s&#39;</span>, <span class="st">&#39;1980s&#39;</span>, <span class="st">&#39;1990s&#39;</span>, <span class="st">&#39;2000s&#39;</span>, <span class="st">&#39;2010s&#39;</span>, <span class="st">&#39;2020s&#39;</span>]</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Era&#39;</span>] <span class="op">=</span> pd.cut(df[<span class="st">&#39;Debut&#39;</span>], bins<span class="op">=</span>bucket, labels<span class="op">=</span>labels, right<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="co">#if a player has multiple positions, make it one but if not then just say position is Unknown</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Primary Position&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Position&#39;</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: x.split(<span class="st">&#39;-&#39;</span>)[<span class="dv">0</span>] <span class="cf">if</span> <span class="bu">isinstance</span>(x, <span class="bu">str</span>) <span class="cf">else</span> <span class="st">&#39;Unknown&#39;</span>)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>df.dropna(subset<span class="op">=</span>[<span class="st">&#39;Debut&#39;</span>, <span class="st">&#39;PTS&#39;</span>, <span class="st">&#39;PER&#39;</span>, <span class="st">&#39;WS&#39;</span>, <span class="st">&#39;Height&#39;</span>, <span class="st">&#39;Weight&#39;</span>, <span class="st">&#39;Era&#39;</span>], inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/tmp/ipython-input-27-2895889619.py:1: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing &#39;df[col].method(value, inplace=True)&#39;, try using &#39;df.method({col: value}, inplace=True)&#39; or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df[&#39;FG3%&#39;].fillna(0, inplace=True)
+/tmp/ipython-input-27-2895889619.py:3: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing &#39;df[col].method(value, inplace=True)&#39;, try using &#39;df.method({col: value}, inplace=True)&#39; or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df[&#39;Weight&#39;].fillna(df[&#39;Weight&#39;].median(), inplace=True)
+</code></pre>
+</div>
+</div>
+<div id="e26b9a7b-114c-480a-9275-9e9c62616144" class="cell markdown"
+id="e26b9a7b-114c-480a-9275-9e9c62616144">
+<p>Next, lets create 4 different ML modeling techniques (Linear
+regression, K-means clustering, Random forest, Decision Tree Classifier)
+to help answer our questions from the introduction. Each technique is
+used differently to help answer each of those questions.</p>
+</div>
+<div id="d3e29873" class="cell code" id="d3e29873">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run_linear_regression(df):</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Model 1: Linear Regression to Predict Win Shares (WS)</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    features <span class="op">=</span> [<span class="st">&#39;Height&#39;</span>, <span class="st">&#39;Weight&#39;</span>]</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    target <span class="op">=</span> <span class="st">&#39;WS&#39;</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> df[features]</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> df[target]</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">#split the data</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>    <span class="co">#create model</span></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> LinearRegression()</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">#train model</span></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>    model.fit(X_train, y_train)</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Interpretation</span></span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Model Coefficients:&quot;</span>)</span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> feature, coef <span class="kw">in</span> <span class="bu">zip</span>(features, model.coef_):</span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>feature<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>coef<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Intercept: </span><span class="sc">{</span>model<span class="sc">.</span>intercept_<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a>    y_pred <span class="op">=</span> model.predict(X_test)</span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a>    r2 <span class="op">=</span> r2_score(y_test, y_pred)</span>
+<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">R-squared on Test Data: </span><span class="sc">{</span>r2<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Showcases that a players great physical build does not equal successful metrics like win shares.&quot;</span>)</span>
+<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> X_test, y_test, y_pred</span>
+<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run_kmeans_clustering(df):</span>
+<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Model 2: K-Means Clustering to Identify Player Roles</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a>    df_era <span class="op">=</span> df[df[<span class="st">&#39;Era&#39;</span>] <span class="op">==</span> <span class="st">&#39;2020s&#39;</span>].copy()</span>
+<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a>    features_for_clustering <span class="op">=</span> [<span class="st">&#39;PTS&#39;</span>, <span class="st">&#39;TRB&#39;</span>, <span class="st">&#39;AST&#39;</span>, <span class="st">&#39;FG3%&#39;</span>, <span class="st">&#39;PER&#39;</span>]</span>
+<span id="cb18-37"><a href="#cb18-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-38"><a href="#cb18-38" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb18-39"><a href="#cb18-39" aria-hidden="true" tabindex="-1"></a>    X_scaled <span class="op">=</span> scaler.fit_transform(df_era[features_for_clustering])</span>
+<span id="cb18-40"><a href="#cb18-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-41"><a href="#cb18-41" aria-hidden="true" tabindex="-1"></a>    kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span><span class="dv">5</span>, random_state<span class="op">=</span><span class="dv">42</span>, n_init<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb18-42"><a href="#cb18-42" aria-hidden="true" tabindex="-1"></a>    df_era[<span class="st">&#39;Cluster&#39;</span>] <span class="op">=</span> kmeans.fit_predict(X_scaled)</span>
+<span id="cb18-43"><a href="#cb18-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-44"><a href="#cb18-44" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Cluster Centers (representing player roles in the 2020s):&quot;</span>)</span>
+<span id="cb18-45"><a href="#cb18-45" aria-hidden="true" tabindex="-1"></a>    cluster_centers <span class="op">=</span> scaler.inverse_transform(kmeans.cluster_centers_)</span>
+<span id="cb18-46"><a href="#cb18-46" aria-hidden="true" tabindex="-1"></a>    cluster_df <span class="op">=</span> pd.DataFrame(cluster_centers, columns<span class="op">=</span>features_for_clustering)</span>
+<span id="cb18-47"><a href="#cb18-47" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(cluster_df.<span class="bu">round</span>(<span class="dv">2</span>))</span>
+<span id="cb18-48"><a href="#cb18-48" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Interpretation of Clusters:&quot;</span>)</span>
+<span id="cb18-49"><a href="#cb18-49" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;A cluster with high PTS and FG3</span><span class="sc">% c</span><span class="st">an be a &#39;Spot-up Shooter&#39;.&quot;</span>)</span>
+<span id="cb18-50"><a href="#cb18-50" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;A cluster with high TRB and PER can be a &#39;Dominant Big in the Paint&#39;.&quot;</span>)</span>
+<span id="cb18-51"><a href="#cb18-51" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;A cluster with high AST can be a &#39;Playmaker&#39;.&quot;</span>)</span>
+<span id="cb18-52"><a href="#cb18-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-53"><a href="#cb18-53" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">This can be used to track which roles came to light or died out in different eras.&quot;</span>)</span>
+<span id="cb18-54"><a href="#cb18-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-55"><a href="#cb18-55" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df_era</span>
+<span id="cb18-56"><a href="#cb18-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-57"><a href="#cb18-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-58"><a href="#cb18-58" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run_random_forest(df):</span>
+<span id="cb18-59"><a href="#cb18-59" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Model 3: Random Forest to Predict Player Efficiency Rating (PER) using their height, weight, and year of their debut</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb18-60"><a href="#cb18-60" aria-hidden="true" tabindex="-1"></a>    features <span class="op">=</span> [<span class="st">&#39;Height&#39;</span>, <span class="st">&#39;Weight&#39;</span>, <span class="st">&#39;Debut&#39;</span>]</span>
+<span id="cb18-61"><a href="#cb18-61" aria-hidden="true" tabindex="-1"></a>    target <span class="op">=</span> <span class="st">&#39;PER&#39;</span></span>
+<span id="cb18-62"><a href="#cb18-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-63"><a href="#cb18-63" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> df[features]</span>
+<span id="cb18-64"><a href="#cb18-64" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> df[target]</span>
+<span id="cb18-65"><a href="#cb18-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-66"><a href="#cb18-66" aria-hidden="true" tabindex="-1"></a>    X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb18-67"><a href="#cb18-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-68"><a href="#cb18-68" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> RandomForestRegressor(n_estimators<span class="op">=</span><span class="dv">100</span>, random_state<span class="op">=</span><span class="dv">42</span>, oob_score<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb18-69"><a href="#cb18-69" aria-hidden="true" tabindex="-1"></a>    model.fit(X_train, y_train)</span>
+<span id="cb18-70"><a href="#cb18-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-71"><a href="#cb18-71" aria-hidden="true" tabindex="-1"></a>    y_pred <span class="op">=</span> model.predict(X_test)</span>
+<span id="cb18-72"><a href="#cb18-72" aria-hidden="true" tabindex="-1"></a>    r2 <span class="op">=</span> r2_score(y_test, y_pred)</span>
+<span id="cb18-73"><a href="#cb18-73" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;R2 score: </span><span class="sc">{</span>r2<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb18-74"><a href="#cb18-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-75"><a href="#cb18-75" aria-hidden="true" tabindex="-1"></a>    importances <span class="op">=</span> pd.Series(model.feature_importances_, index<span class="op">=</span>features).sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb18-76"><a href="#cb18-76" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Feature Importances:&quot;</span>)</span>
+<span id="cb18-77"><a href="#cb18-77" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(importances)</span>
+<span id="cb18-78"><a href="#cb18-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-79"><a href="#cb18-79" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;The &#39;Debut&#39; year is the most important feature as it showcases the potential career they will have during that era compared to their physical stats.&quot;</span>)</span>
+<span id="cb18-80"><a href="#cb18-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-81"><a href="#cb18-81" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run_decision_tree_classifier(df):</span>
+<span id="cb18-82"><a href="#cb18-82" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Model 4: Decision Tree Classifier to Predict Hall of Fame (HOF) Status</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb18-83"><a href="#cb18-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-84"><a href="#cb18-84" aria-hidden="true" tabindex="-1"></a>    df_hof <span class="op">=</span> df[df[<span class="st">&#39;Final&#39;</span>] <span class="op">&lt;</span> <span class="dv">2015</span>].copy()</span>
+<span id="cb18-85"><a href="#cb18-85" aria-hidden="true" tabindex="-1"></a>    df_hof[<span class="st">&#39;HOF&#39;</span>] <span class="op">=</span> df_hof[<span class="st">&#39;HOF&#39;</span>].astype(<span class="bu">bool</span>)</span>
+<span id="cb18-86"><a href="#cb18-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-87"><a href="#cb18-87" aria-hidden="true" tabindex="-1"></a>    features <span class="op">=</span> [<span class="st">&#39;PTS&#39;</span>, <span class="st">&#39;TRB&#39;</span>, <span class="st">&#39;AST&#39;</span>, <span class="st">&#39;PER&#39;</span>, <span class="st">&#39;WS&#39;</span>]</span>
+<span id="cb18-88"><a href="#cb18-88" aria-hidden="true" tabindex="-1"></a>    target <span class="op">=</span> <span class="st">&#39;HOF&#39;</span></span>
+<span id="cb18-89"><a href="#cb18-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-90"><a href="#cb18-90" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> df_hof[features]</span>
+<span id="cb18-91"><a href="#cb18-91" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> df_hof[target]</span>
+<span id="cb18-92"><a href="#cb18-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-93"><a href="#cb18-93" aria-hidden="true" tabindex="-1"></a>    X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.25</span>, random_state<span class="op">=</span><span class="dv">42</span>, stratify<span class="op">=</span>y)</span>
+<span id="cb18-94"><a href="#cb18-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-95"><a href="#cb18-95" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> DecisionTreeClassifier(max_depth<span class="op">=</span><span class="dv">4</span>, random_state<span class="op">=</span><span class="dv">42</span>, class_weight<span class="op">=</span><span class="st">&#39;balanced&#39;</span>)</span>
+<span id="cb18-96"><a href="#cb18-96" aria-hidden="true" tabindex="-1"></a>    model.fit(X_train, y_train)</span>
+<span id="cb18-97"><a href="#cb18-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-98"><a href="#cb18-98" aria-hidden="true" tabindex="-1"></a>    y_pred <span class="op">=</span> model.predict(X_test)</span>
+<span id="cb18-99"><a href="#cb18-99" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Model Accuracy: </span><span class="sc">{</span>accuracy_score(y_test, y_pred)<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb18-100"><a href="#cb18-100" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Classification Report:&quot;</span>)</span>
+<span id="cb18-101"><a href="#cb18-101" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(classification_report(y_test, y_pred, target_names<span class="op">=</span>[<span class="st">&#39;Not HOF&#39;</span>, <span class="st">&#39;HOF&#39;</span>]))</span>
+<span id="cb18-102"><a href="#cb18-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-103"><a href="#cb18-103" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Uses a decision tree based on a players stats to see if they would make the HOF.&quot;</span>)</span></code></pre></div>
+</div>
+<div id="1811b6c0-9739-4b1a-a3b7-312f44bfb09f" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="1811b6c0-9739-4b1a-a3b7-312f44bfb09f"
+data-outputId="8a544e6c-e8f5-4532-ad0a-78010ce1af80">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>rlx_test, rly_test, rly_pred <span class="op">=</span> run_linear_regression(df)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>df_era <span class="op">=</span> run_kmeans_clustering(df)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>run_random_forest(df)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>run_decision_tree_classifier(df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+Model 1: Linear Regression to Predict Win Shares (WS)
+
+Model Coefficients:
+Height: 0.2627
+Weight: 0.0608
+Intercept: -18.9273
+
+R-squared on Test Data: 0.0073
+Showcases that a players great physical build does not equal successful metrics like win shares.
+
+Model 2: K-Means Clustering to Identify Player Roles
+
+Cluster Centers (representing player roles in the 2020s):
+     PTS   TRB   AST   FG3%    PER
+0   0.92  0.87  0.32   3.82  -0.45
+1  16.02  4.91  4.56  33.56  15.54
+2   4.69  3.75  0.59   4.28  18.11
+3   8.79  3.88  1.76  33.53  12.87
+4   3.73  1.59  0.88  32.04  10.16
+
+Interpretation of Clusters:
+A cluster with high PTS and FG3% can be a &#39;Spot-up Shooter&#39;.
+A cluster with high TRB and PER can be a &#39;Dominant Big in the Paint&#39;.
+A cluster with high AST can be a &#39;Playmaker&#39;.
+
+This can be used to track which roles came to light or died out in different eras.
+
+Model 3: Random Forest to Predict Player Efficiency Rating (PER) using their height, weight, and year of their debut
+
+R2 score: -0.2515
+
+Feature Importances:
+Debut     0.393065
+Weight    0.358629
+Height    0.248306
+dtype: float64
+The &#39;Debut&#39; year is the most important feature as it showcases the potential career they will have during that era compared to their physical stats.
+
+Model 4: Decision Tree Classifier to Predict Hall of Fame (HOF) Status
+
+Model Accuracy: 0.9278
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     Not HOF       0.99      0.93      0.96       818
+         HOF       0.38      0.83      0.52        41
+
+    accuracy                           0.93       859
+   macro avg       0.69      0.88      0.74       859
+weighted avg       0.96      0.93      0.94       859
+
+Uses a decision tree based on a players stats to see if they would make the HOF.
+</code></pre>
+</div>
+</div>
+<div id="ff848c64" class="cell markdown" id="ff848c64"
+data-jp-MarkdownHeadingCollapsed="true">
+<h2 id="visualization">Visualization</h2>
+</div>
+<div id="4tVCFGVvPSLD" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:504}"
+id="4tVCFGVvPSLD" data-outputId="22868f98-49c0-4885-b55c-77cac9319e30">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Let&#39;s plot the results from the Linear Regression Model</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>plt.scatter(rlx_test[<span class="st">&#39;Height&#39;</span>], rly_test, label<span class="op">=</span><span class="st">&#39;Actual&#39;</span>)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>plt.scatter(rlx_test[<span class="st">&#39;Height&#39;</span>], rly_pred,label<span class="op">=</span><span class="st">&#39;Predicted&#39;</span>)</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Height&#39;</span>)</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Win Shares&#39;</span>)</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Height vs. Predicted Win Shares&#39;</span>)</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>plt.scatter(rlx_test[<span class="st">&#39;Weight&#39;</span>], rly_test, label<span class="op">=</span><span class="st">&#39;Actual&#39;</span>)</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>plt.scatter(rlx_test[<span class="st">&#39;Weight&#39;</span>], rly_pred, label<span class="op">=</span><span class="st">&#39;Predicted&#39;</span>)</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Weight&#39;</span>)</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Win Shares&#39;</span>)</span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Weight vs. Predicted Win Shares&#39;</span>)</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>plt</span></code></pre></div>
+<div class="output execute_result" data-execution_count="47">
+<pre><code>&lt;module &#39;matplotlib.pyplot&#39; from &#39;/usr/local/lib/python3.11/dist-packages/matplotlib/pyplot.py&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_8e68b58e0d7647639b80e66bd34588b6/ddbfe93d2636dbf047bf4ea840ef56d8dff61a84.png" /></p>
+</div>
+</div>
+<div id="xXg8pju8Tz6r" class="cell markdown" id="xXg8pju8Tz6r">
+<p>As you can see, a player's build (heigh and weight) don't predict Win
+Share performance, more factors are in play.</p>
+</div>
+<div id="KlIcf0J0TC9e" class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="KlIcf0J0TC9e" data-outputId="b25359ed-35c8-402d-85a3-5dc20257df22">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Now let&#39;s plot the results from the K means</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>df_era, x<span class="op">=</span><span class="st">&#39;PTS&#39;</span>, y<span class="op">=</span><span class="st">&#39;FG3%&#39;</span>, hue<span class="op">=</span><span class="st">&#39;Cluster&#39;</span>, palette<span class="op">=</span><span class="st">&#39;tab10&#39;</span>)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;KMeans Clusters of Players in 2020s (PTS vs FG3)&#39;</span>)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Points&#39;</span>)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Threes&#39;</span>)</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">&#39;Cluster&#39;</span>)</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>df_era, x<span class="op">=</span><span class="st">&#39;TRB&#39;</span>, y<span class="op">=</span><span class="st">&#39;PTS&#39;</span>, hue<span class="op">=</span><span class="st">&#39;Cluster&#39;</span>, palette<span class="op">=</span><span class="st">&#39;tab10&#39;</span>)</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;KMeans Clusters of Players in 2020s (TRB vs PTS)&#39;</span>)</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Rebounds&#39;</span>)</span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Points&#39;</span>)</span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">&#39;Cluster&#39;</span>)</span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_8e68b58e0d7647639b80e66bd34588b6/4d1d505e2de50407f3b0bae6d09efbea4744f6db.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_8e68b58e0d7647639b80e66bd34588b6/ddaa9ede9b02e587e12e742afd8943a1f1814aef.png" /></p>
+</div>
+</div>
+<div id="YtY0c027UVKx" class="cell markdown" id="YtY0c027UVKx">
+<p>As described previously:</p>
+<p>The cluster with high PTS and FG3%, as seen in the plot, Cluster 1
+and a little but of Cluster 3, can be a 'Spot-up Shooter'. Spot-up
+shooters are players who excel and recieving a pass and shooting
+immediately, which would explain their high Points and threes.</p>
+<p>The cluster with high TRB and PER can be a 'Dominant Big in the
+Paint'. Cluster 1 (the far right) shows this role, these players are
+usually centers or forwards and are best at rebounding and scoring.</p>
+</div>
+<div id="c2bca655" class="cell markdown" id="c2bca655">
+<h2 id="insights-and-conclusions">Insights and Conclusions</h2>
+</div>
+<div id="FcOiPu0YYkvz" class="cell markdown" id="FcOiPu0YYkvz">
+<h3 id="linear-regression">Linear Regression</h3>
+<p>The low R squared shows us that physical statistics are poor
+predictors of success in the game. Height and weight have a minimal
+impact on a player's performance. Reinforces that the game requires more
+things such as thinking, dribble skill, speed.</p>
+<h3 id="k-means">K-Means</h3>
+<p>The Clusters help us visualize different roles and playstyles given a
+player's stats. For sake of brevity the plots only show 2020s but if an
+individual were to plot other eras, we could see how these roles
+developed and passed.</p>
+<h3 id="random-forest">Random Forest</h3>
+<p>The Debut year being the most import feature tells us a few things.
+This indicates that the era a player started signifcantly impacted their
+performance. Newer eras may have higher performance ratings due to the
+changing playstyle, better training, and the overall increase in the
+skill floor of the game.</p>
+<h3 id="decision-tree">Decision Tree</h3>
+<p>The low precision for HOF is likely due to the fact that aren't many
+HOF players in the data. This upholds the idea that being in the HOF is
+more than just raw statistics. Other factors are taken into play such as
+championships or even the dominance of the player in their era. An old
+player could be HOF and have poor stats when comparing to a modern
+non-HOF player. Further showing us the increase in the skill floor.</p>
+<h3 id="conclusions">Conclusions</h3>
+<p>We can see that physical traits are not as important as one would
+think. An average person with limited knowledge would logically assume
+height is a big factor but that's not so. But, with statistics, we are
+able to determine a player's "role" as some roles have higher/lower
+statistics. However, we aren't able to determine the HOF players with
+just the given statistics as HOF requires other, more "macro" factors
+such as dominance in the league at the time. Overall, we can see how the
+game has changed and evolved over time, showing the increase in certain
+statistics and changes in playstyles/roles.</p>
+</div>
+</body>
+</html>
